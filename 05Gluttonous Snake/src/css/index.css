@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: bold 20px Courier;
+}
+#main {
+  width: 360px;
+  height: 420px;
+  margin: 100px auto;
+  border: 10px solid #000000;
+  border-radius: 25px;
+  background-color: #b7d4a8;
+}
+#stage {
+  position: relative;
+  width: 304px;
+  height: 304px;
+  margin: 20px auto;
+  border: 2px solid #000000;
+  /* 设置食物 */
+}
+#stage #snake > div {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #b7d4a8;
+  border-radius: 4px;
+  background-color: rgba(132, 28, 196, 0.872);
+}
+#stage #food {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #b7d4a8;
+}
+#stage #food > div {
+  float: left;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #b7d4a8;
+  background-color: darkcyan;
+  transform: rotate(45deg);
+}
+#score-panel {
+  margin: 10px;
+  display: block;
+  content: none;
+  clear: both;
+}
+#score-panel #score {
+  float: left;
+}
+#score-panel #level {
+  float: right;
+}
